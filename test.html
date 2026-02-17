@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Responsive Image Gallery</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 20px;
+        }
+
+        /* Gallery Container */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            padding: 20px;
+            justify-content: center;
+        }
+
+        /* Gallery Items */
+        .gallery img {
+            width: 23%;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Tablet View */
+        @media (max-width: 992px) {
+            .gallery img {
+                width: 45%;
+            }
+        }
+
+        /* Mobile View */
+        @media (max-width: 576px) {
+            .gallery img {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<h1>Responsive Image Gallery</h1>
+
+<div class="gallery">
+    <img src="https://picsum.photos/400/300?random=1" alt="Image 1">
+    <img src="https://picsum.photos/400/300?random=2" alt="Image 2">
+    <img src="https://picsum.photos/400/300?random=3" alt="Image 3">
+    <img src="https://picsum.photos/400/300?random=4" alt="Image 4">
+    <img src="https://picsum.photos/400/300?random=5" alt="Image 5">
+    <img src="https://picsum.photos/400/300?random=6" alt="Image 6">
+    <img src="https://picsum.photos/400/300?random=7" alt="Image 7">
+    <img src="https://picsum.photos/400/300?random=8" alt="Image 8">
+</div>
+
+</body>
+</html>
